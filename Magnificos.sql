@@ -121,23 +121,6 @@ CREATE TABLE `Futbolistas_Stats` (
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `LigaHasUsuario`
---
-
-CREATE TABLE `LigaHasUsuario` (
-  `IdUsuario` int NOT NULL,
-  `idLiga` int NOT NULL,
-  `invitacionAceptada` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Ligas`
---
 
 CREATE TABLE `Ligas` (
   `idLiga` int NOT NULL,
@@ -146,6 +129,12 @@ CREATE TABLE `Ligas` (
   `descripcionLiga` varchar(250) COLLATE utf8_spanish2_ci NOT NULL,
   `publica` tinyint(1) NOT NULL,
   `adminLiga` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+CREATE TABLE `LigaHasUsuario` (
+  `IdUsuario` int NOT NULL,
+  `idLiga` int NOT NULL,
+  `invitacionAceptada` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -254,11 +243,22 @@ CREATE TABLE `UsuarioPartidoFutbolista` (
 CREATE TABLE `Usuarios` (
   `IdUsuario` int NOT NULL,
   `IdWordPress` int NOT NULL,
-  `nombreUsusaio` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `nombreUsuario` varchar(100) COLLATE utf8_spanish2_ci,
   `clave` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
   `abonado` tinyint(1) NOT NULL,
   `fechaAbono` date NOT NULL,
   `foto` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+CREATE TABLE `Usuarios_Team` (
+  `IdUsuario` int NOT NULL,
+  `IdPlayer1` bigint NOT NULL,
+  `IdPlayer2` bigint NOT NULL,
+  `IdPlayer3` bigint NOT NULL,
+  `IdPlayer4` bigint NOT NULL,
+  `IdPlayer5` bigint NOT NULL,
+  `teamName` varchar(100) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --

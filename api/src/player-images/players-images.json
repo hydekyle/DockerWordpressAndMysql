@@ -1,0 +1,85 @@
+{
+    "players": [
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/893140/image",
+            "id": "3628912054"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/914731/image",
+            "id": "196063103"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/69373/image",
+            "id": "2828168"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/850479/image",
+            "id": "3941259619"
+        },
+        {
+            "imageURL": "https://sortitoutsi.net/uploads/face/95078290.png",
+            "id": "656606421"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/939851/image",
+            "id": "428683134"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/572198/image",
+            "id": "3173491032"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/849719/image",
+            "id": "1316727045"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/1000676/image",
+            "id": "3148139412"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/19374/image",
+            "id": "3319541192"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/5117/image",
+            "id": "807944735"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/87774/image",
+            "id": "3016987598"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/949449/image",
+            "id": "3830024373"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/1002347/image",
+            "id": "2730490581"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/844028/image",
+            "id": "3216639759"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/591738/image",
+            "id": "82098255"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/376854/image",
+            "id": "3454799598"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/1010421/image",
+            "id": "2348036217"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/40971/image",
+            "id": "2000537891"
+        },
+        {
+            "imageURL": "https://api.sofascore.com/api/v1/player/259473/image",
+            "id": "401219606"
+        }
+        
+    ]
+}

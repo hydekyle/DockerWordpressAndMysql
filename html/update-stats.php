@@ -8,7 +8,7 @@
     $player_type = $_GET["type"];
     $player_goals = $_GET["goals"];
     $player_minutes = $_GET["minutes"];
-    $player_fouls_commited = $_GET["fouls_commited"];
+    $player_fouls_commited = $_GET["fouls_committed"];
     $player_duels_total = $_GET["duels_total"];
     $player_duels_won = $_GET["duels_won"];
     global $wpdb;

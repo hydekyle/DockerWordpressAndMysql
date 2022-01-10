@@ -1,21 +1,22 @@
-services:    
-    wordpress:
-        image: wordpress
-        links:
-        - mariadb:mysql
-        environment:
-            - WORDPRESS_DB_USER=root
-            - WORDPRESS_DB_PASSWORD=toor
-        ports:
-        - "8079:80"
-        volumes:
-        - ./html:/var/www/html
-    mariadb:
-        image: mariadb
-        restart: always
-        environment:
-            - MYSQL_DATABASE=wordpress
-            - MYSQL_ROOT_PASSWORD=toor
-        volumes:
-        - ./database:/var/lib/mysql
-        - ./Magnificos.sql:/var/lib/mysql/Magnificos.sql
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    links:
+      - mariadb:mysql
+    environment:
+      - WORDPRESS_DB_USER=root
+      - WORDPRESS_DB_PASSWORD=toor
+    ports:
+      - "8079:80"
+    volumes:
+      - ./html:/var/www/html
+  mariadb:
+    image: mariadb
+    restart: always
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_ROOT_PASSWORD=toor
+    volumes:
+      - ./database:/var/lib/mysql
+      - ./Magnificos.sql:/var/lib/mysql/Magnificos.sql
