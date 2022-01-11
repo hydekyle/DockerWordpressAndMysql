@@ -19,4 +19,4 @@ services:
       - MYSQL_ROOT_PASSWORD=toor
     volumes:
       - ./database:/var/lib/mysql
-      - ./Magnificos.sql:/var/lib/mysql/Magnificos.sql
+      - ./scheme.sql:/var/lib/mysql/scheme.sql
