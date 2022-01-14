@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
     $livesPerCredit = 3;
     $playerMovementSpeed = 7;
     $playerAttackSpeed = 7;

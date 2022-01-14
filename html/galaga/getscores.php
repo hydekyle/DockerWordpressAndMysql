@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
     include_once("./gameconfig.php");
     include_once("../wp-load.php");
     include_once("../wp-config.php");
